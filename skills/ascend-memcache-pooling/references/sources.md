@@ -59,6 +59,6 @@ git -C memfabric-wiki checkout a0534877ef59273fdb6dd40e6524783daa74c8a2
 ## Review boundaries
 
 - A3 storage ordering and zero-DRAM consumers come from the standalone case. A5 protocol mappings come from the 950 guide. SSD ownership and memory budgets come from the detailed guide. The six-route matrix composes these mechanisms; it is not six reproduced hardware cases.
-- The SSD introduction and detailed guide disagree about recovery/force initialization, standalone memory suggestions and one scratch-key spelling. Preserve these conflicts and resolve against the installed implementation as described in [SSD](ssd.md).
+- The SSD introduction and detailed guide disagree about recovery/force initialization, standalone memory suggestions and one scratch-key spelling. Preserve these conflicts and resolve against the installed implementation as described in [SSD](deployment.md#add-ssd-to-an-established-dram-pool).
 - Current operator installation uses mfcli; the older A5 troubleshooting import workaround has narrower prerequisites. No universal command to disable signature verification, TLS or edit registers is supplied.
 - Version support for model-specific hybrid layouts, layerwise loading and PD multi-connectors belongs to the selected inference framework; the historical v1.1 integration example is not a compatibility promise for every current version.
