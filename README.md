@@ -63,14 +63,15 @@
 
 <!-- CATALOG:START -->
 
-53 个技能 · 10 个分类
+56 个技能 · 10 个分类
 
-定义已审阅：53 · 已有运行复现记录：0。具体范围见各条目记录。
+定义已审阅：56 · 已有运行复现记录：0。具体范围见各条目记录。
 
 | 来源项目 | 已收录 | 维护者 | 许可证 |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [awesome-va-skills](https://github.com/Yuli-yx/awesome-va-skills) | 3 | Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin) | MIT (the three listed packages only) |
 
 - [环境与依赖](#environment)
 - [模型接入与转换](#model-integration)
@@ -137,6 +138,10 @@
 
 通过预热、重复测量和受控对比评估吞吐与延迟。
 
+- [aisbench-pd-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/aisbench-pd-benchmark/SKILL.md) — 通过 P/D 代理运行 AISBench，构建定长或重复前缀数据，分离预热与正式测量并保留配置和结果。
+  `vLLM Ascend` `AISBench` `PD` `执行需 NPU` · [条目](catalog/skills/aisbench-pd-benchmark.yaml)
+- [pd-pure-role-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/pd-pure-role-benchmark/SKILL.md) — 分别验收纯 P、纯 D 容量及端到端稳态 QPS，核对 TTFT、TPOT、缓存命中、角色瓶颈和 MTP 对照。
+  `vLLM Ascend` `AISBench` `PD` `MTP` `执行需 NPU` `流程编排` · [条目](catalog/skills/pd-pure-role-benchmark.yaml)
 - [vllm-ascend-benchmark](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-benchmark/SKILL.md) — 对一个代码状态进行预热与重复测量，输出归一化吞吐和延迟指标。
   `vLLM Ascend` `执行需 NPU` · [条目](catalog/skills/vllm-ascend-benchmark.yaml)
 - [vllm-ascend-performance-regression](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-performance-regression/SKILL.md) — 交替运行基线与候选版本，在相同负载下比较性能变化与波动。
@@ -231,6 +236,8 @@
   `CANNBot` `Ascend C` `设备取决于检查项` · [条目](catalog/skills/ascendc-precision-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/tools/asys-toolkit/SKILL.md) — 在 Ascend EP 环境使用 asys 收集故障信息、检查设备健康并解析诊断产物。
   `CANNBot` `CANN` `asys` `设备取决于检查项` · [条目](catalog/skills/asys-toolkit.yaml)
+- [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — 对照 P、D 和代理响应，以单变量实验、KV 指纹及首次输出偏差定位 P/D 复读、乱码和精度异常。
+  `vLLM Ascend` `PD` `KV transfer` `Accuracy` `执行需 NPU` `流程编排` · [条目](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
 - [ge-dynamic-shape-diagnose](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/graph/ge-dynamic-shape-diagnose/SKILL.md) — 根据 GE 编译日志定位 unknown graph 与动态 shape 调度的触发原因。
   `CANNBot` `GE` `离线分析` · [条目](catalog/skills/ge-dynamic-shape-diagnose.yaml)
 - [model-infer-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-precision-debug/SKILL.md) — 定位 KVCache 与 FlashAttention 相关的 Prefill/Decode 精度差异、缓存更新和映射问题。

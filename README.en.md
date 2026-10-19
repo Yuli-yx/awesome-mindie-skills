@@ -63,14 +63,15 @@ Each entry's metadata links to its review scope, reproduction cases, and evidenc
 
 <!-- CATALOG:START -->
 
-53 skills · 10 categories
+56 skills · 10 categories
 
-Definitions reviewed: 53 · Entries with execution reproductions: 0. See each entry's metadata for scope.
+Definitions reviewed: 56 · Entries with execution reproductions: 0. See each entry's metadata for scope.
 
 | Upstream Source | Listed | Maintainer | License |
 |---|---|---|---|
 | [vllm-ascend-skills](https://github.com/pisceskkk/vllm-ascend-skills) | 17 | pisceskkk | MIT |
 | [cannbot-skills](https://gitcode.com/cann/cannbot-skills) | 36 | CANNBot SIG (cann) | CANN Open Software License v2.0 |
+| [awesome-va-skills](https://github.com/Yuli-yx/awesome-va-skills) | 3 | Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin) | MIT (the three listed packages only) |
 
 - [Environment and dependencies](#environment)
 - [Model integration and conversion](#model-integration)
@@ -137,6 +138,10 @@ Fix references and case matrices to compare outputs, numerical error, and task q
 
 Evaluate throughput and latency using warmup, repeated measurements, and controlled comparisons.
 
+- [aisbench-pd-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/aisbench-pd-benchmark/SKILL.md) — Prepare proxy-routed AISBench cases with tokenizer-based datasets, separate warmup and formal runs, and captured configuration and results.
+  `vLLM Ascend` `AISBench` `PD` `NPU execution` · [Metadata](catalog/skills/aisbench-pd-benchmark.yaml)
+- [pd-pure-role-benchmark](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/pd-pure-role-benchmark/SKILL.md) — Validate pure Prefill and Decode capacity and end-to-end steady QPS with TTFT, TPOT, cache-hit, role-bottleneck and MTP controls.
+  `vLLM Ascend` `AISBench` `PD` `MTP` `NPU execution` `Workflow` · [Metadata](catalog/skills/pd-pure-role-benchmark.yaml)
 - [vllm-ascend-benchmark](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-benchmark/SKILL.md) — Measure one vLLM Ascend online-serving code state with warmup, repeated runs and normalized metrics.
   `vLLM Ascend` `NPU execution` · [Metadata](catalog/skills/vllm-ascend-benchmark.yaml)
 - [vllm-ascend-performance-regression](https://github.com/pisceskkk/vllm-ascend-skills/blob/4e7417c3d88847a17ba6d61d6a9b748ad8e0bbc3/skills/vllm-ascend-performance-regression/SKILL.md) — Compare baseline and candidate vLLM Ascend serving performance using controlled alternating runs.
@@ -231,6 +236,8 @@ Reduce startup, communication, graph, and operator failures and verify fixes.
   `CANNBot` `Ascend C` `Hardware depends on checks` · [Metadata](catalog/skills/ascendc-precision-debug.yaml)
 - [asys-toolkit](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/tools/asys-toolkit/SKILL.md) — Use asys in Ascend EP environments to collect failure information, inspect device health, and parse diagnostic artifacts.
   `CANNBot` `CANN` `asys` `Hardware depends on checks` · [Metadata](catalog/skills/asys-toolkit.yaml)
+- [debugging-vllm-ascend-pd-accuracy](https://github.com/Yuli-yx/awesome-va-skills/blob/8d9f7ee56d088f15a398181590c4512bfc725d6f/.agents/skills/debugging-vllm-ascend-pd-accuracy/SKILL.md) — Diagnose PD repetition and accuracy divergence using P/D/proxy comparisons, single-variable experiments, KV fingerprints and first-divergence evidence.
+  `vLLM Ascend` `PD` `KV transfer` `Accuracy` `NPU execution` `Workflow` · [Metadata](catalog/skills/debugging-vllm-ascend-pd-accuracy.yaml)
 - [ge-dynamic-shape-diagnose](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/graph/ge-dynamic-shape-diagnose/SKILL.md) — Identify unknown-graph and dynamic-shape scheduling triggers from GE compiler logs.
   `CANNBot` `GE` `Offline analysis` · [Metadata](catalog/skills/ge-dynamic-shape-diagnose.yaml)
 - [model-infer-precision-debug](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-precision-debug/SKILL.md) — Diagnose KVCache and FlashAttention prefill/decode accuracy differences, cache updates, and mapping errors.

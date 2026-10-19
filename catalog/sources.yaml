@@ -10,3 +10,8 @@ sources:
     revision: 393564ae43f304426db2c206e361cd43b2811413
     license: CANN Open Software License v2.0
     maintainer: CANNBot SIG (cann)
+  awesome-va-skills:
+    repository: https://github.com/Yuli-yx/awesome-va-skills
+    revision: 8d9f7ee56d088f15a398181590c4512bfc725d6f
+    license: MIT (the three listed packages only)
+    maintainer: Yuli-yx (adapted collection); wangxiaoteng888 (AISBench origin)
