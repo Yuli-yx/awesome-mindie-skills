@@ -110,7 +110,7 @@ Integrate models, convert weights, and verify configuration and input/output con
 
 Deploy colocated or disaggregated services and verify topology, endpoints, and requests.
 
-- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/c4ed05e1649240e465bb236e9a4ebf1023b6e884/skills/ascend-memcache-pooling/SKILL.md) — Deploy two- or three-tier KV pools on A3 and A5 UB/UBoE using official MemCache and MemFabric guidance, with owner, configuration and readback checks.
+- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/cc87235a79fc2145afecfbd03b59fc772ee41724/skills/ascend-memcache-pooling/SKILL.md) — Deploy two- or three-tier KV pools on A3 and A5 UB/UBoE using official MemCache and MemFabric guidance, with owner, configuration and readback checks.
   `MemCache` `MemFabric` `vLLM Ascend` `SSD` `NPU execution` `Workflow` · [Metadata](catalog/skills/ascend-memcache-pooling.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — Analyze model structure and Atlas A2/A3 specifications to propose parallel_config candidates with quantitative rationale.
   `CANNBot` `PyTorch` `Parallelism` `Host tools` · [Metadata](catalog/skills/model-infer-parallel-analysis.yaml)

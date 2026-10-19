@@ -1,10 +1,10 @@
 # MemCache pooling definition review - 2026-10-19
 
-Source: zouyida2052/awesome-mindie-skills at c4ed05e1649240e465bb236e9a4ebf1023b6e884, skills/ascend-memcache-pooling/SKILL.md. Original skill under CC0-1.0; upstream reference material retains its own licensing. The implementation is included in this contribution; the catalogue URL points to the immutable published fork commit so installation does not depend on an unmerged upstream path.
+Source: zouyida2052/awesome-mindie-skills at cc87235a79fc2145afecfbd03b59fc772ee41724, skills/ascend-memcache-pooling/SKILL.md. Original skill under CC0-1.0; upstream reference material retains its own licensing. The implementation is included in this contribution; the catalogue URL points to the immutable published fork commit so installation does not depend on an unmerged upstream path.
 
 Scope: A3 HCCS/SDMA standalone ownership and A5 UB/UBoE fused ownership, each with HBM+DRAM or HBM+DRAM+SSD. Pooling is distinct from optional PD transfer. Model layout, driver, firmware and package compatibility remain deployment inputs.
 
-Reviewed all seven skill/reference files against the official Git snapshots and file hashes in the [source ledger](../skills/ascend-memcache-pooling/references/sources.md). Checked A3 init ordering and consumer capacity, A5 transport distinction, additional UBSIO memory, disk-owner count, force-initialization boundaries and scratch-key documentation conflicts. Runtime scripts are generated for the chosen environment; no hard-coded private endpoints or credentials are included.
+Reviewed all three skill/reference files against the official Git snapshots and file hashes in the [source ledger](../skills/ascend-memcache-pooling/references/sources.md). Checked A3 init ordering and consumer capacity, A5 transport distinction, additional UBSIO memory, disk-owner count, force-initialization boundaries and scratch-key documentation conflicts. Runtime scripts are generated for the chosen environment; no hard-coded private endpoints or credentials are included.
 
 Behavioral desk checks (not hardware reproductions):
 

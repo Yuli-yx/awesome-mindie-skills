@@ -14,7 +14,7 @@ role: workflow
 source:
   project: ascend-pooling-workflows
   path: skills/ascend-memcache-pooling/SKILL.md
-  sha256: f37c8f863955c1888b6cd638803de021a56dd75881421f023ad77e41794a8bf1
+  sha256: 973dabf78021d590a878690f2b81f490e624a8575eec6687b1c16d15a426c20e
 review:
   status: definition-reviewed
   date: '2026-10-19'

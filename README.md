@@ -110,7 +110,7 @@
 
 部署共置或 PD 分离服务，验证拓扑、端点与请求。
 
-- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/c4ed05e1649240e465bb236e9a4ebf1023b6e884/skills/ascend-memcache-pooling/SKILL.md) — 依据 MemCache 与 MemFabric 官方资料部署 A3、A5 UB/UBoE 二级或三级 KV 池化，核对存储进程、配置和回读。
+- [ascend-memcache-pooling](https://github.com/zouyida2052/awesome-mindie-skills/blob/cc87235a79fc2145afecfbd03b59fc772ee41724/skills/ascend-memcache-pooling/SKILL.md) — 依据 MemCache 与 MemFabric 官方资料部署 A3、A5 UB/UBoE 二级或三级 KV 池化，核对存储进程、配置和回读。
   `MemCache` `MemFabric` `vLLM Ascend` `SSD` `执行需 NPU` `流程编排` · [条目](catalog/skills/ascend-memcache-pooling.yaml)
 - [model-infer-parallel-analysis](https://gitcode.com/cann/cannbot-skills/blob/393564ae43f304426db2c206e361cd43b2811413/model/model-infer-parallel-analysis/SKILL.md) — 根据模型结构与 Atlas A2/A3 规格分析并行策略，输出 parallel_config 候选和定量依据。
   `CANNBot` `PyTorch` `Parallelism` `主机工具` · [条目](catalog/skills/model-infer-parallel-analysis.yaml)
