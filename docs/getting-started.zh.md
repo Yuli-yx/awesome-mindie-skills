@@ -69,3 +69,18 @@ git -C awesome-va-skills checkout --detach 8d9f7ee56d088f15a398181590c4512bfc725
 ## 留存与分享结果
 
 执行过程中请保留源码 commit、软硬件运行环境、用例配置、原始日志与产物路径。若希望分享可复现案例或提交条目修正，请按照[贡献指南](../CONTRIBUTING.zh.md)及[验证规则](validation-policy.zh.md)中定义的字段提交。
+
+### 新增 VA 合集工作流
+
+新增 `va-workflows`、`va-apache-workflows`、`va-hixl-workflows` 使用同一个完整
+合集快照，按各包的 MIT / Apache / CANN 许可证分别登记：
+
+```bash
+git clone https://github.com/Yuli-yx/awesome-va-skills.git awesome-va-collection
+git -C awesome-va-collection checkout --detach 7d3aa5f3b55049a2f917b4ca682c1e9963033c18
+```
+
+保留完整技能包及其需要的 `.agents/lib/`、`.agents/scripts/`、`.remote-dev/`。
+旧执行工具尚未宣称适配新版 MindIE coordinator API，集成前先检查差异，避免覆盖
+现有运行状态。原始作者与许可边界见合集 ATTRIBUTION.md。先前三个 PD 条目继续
+保留各自已经审阅的来源版本；池化另走独立 PR。
